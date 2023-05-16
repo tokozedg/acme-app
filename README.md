@@ -45,6 +45,7 @@ npm run cypress:test
 # manually run cypress file
 npm run cypress:open
 ```
+
 **Pytest**
 For unit testing [Pytest](https://docs.pytest.org/en/latest/) is being used. [Coverage](https://coverage.readthedocs.io/en/coverage-5.3.1/) is used to generate code coverage report. To run the unit tests use `pytest --cov-report=html --cov=app app/testing` and it will produce a HTML code coverage report as well.
 
