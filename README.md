@@ -1,8 +1,4 @@
-
-[![codecov](https://codecov.io/gh/fras2560/flask-pytest-cypress-ci-template/branch/main/graph/badge.svg?token=VLX345TQ0C)](https://codecov.io/gh/fras2560/flask-pytest-cypress-ci-template)
-
-# flask-pytest-cypress-ci-template
-A template to help someone get started developing simple flask apps quickly.
+# acme-app
 
 ## Development Locally
 **Assumed Dependencies**:
@@ -19,23 +15,6 @@ export DEBUG=True
 python runserver.py
 ```
 This will use an in-memory database. To actually test with a PostGres database one just needs to setup the appropriate environment variables.
-
-### Virtual Environment
-It is recommend to use a virtual environment when developing different apps. This allows for dependencies to be kept separate from each other. `virtualenv` is one good choice when using a virtual environment. See [how to install](https://virtualenv.pypa.io/en/latest/installation.html). Once install one can use the following:
-```
-# Linux
-virtualenv venv # create virutal environment, usually do this inside app folder
-source venv/bin/activate # activate the virtual environment
-... # use virtual environment - install depenendencies and start flask server
-deactivate # to deactivate the virtual environment
-```
-```
-# windows
-virtualenv venv # create virutal environment, usually do this inside app folder
-venv\Scripts\activate.bat # activate the virtual environment
-... # use virtual environment - install depenendencies and start flask server
-deactivate # to deactivate the virtual environment
-```
 
 ### Environment Variables
 The following variables are used by the app and the defaults are in brackets:
@@ -83,12 +62,3 @@ A Github action is run on pull requests to the main branch. This action could be
 4. Starts the flask server and cypress tests against it
 5. Upload cypress testing video as an artifact
 6. Upload code coverage report from Cypress E2E testing
-
-# Heroku Production
-Setup using Heroku UI
-1. Create a new app
-2. Integrate with Github for automatic deployments from main
-3. Add Heroku Postgres
-	Run console -> `python initDB.py`
-4. Add Environment variables in Settings tab:
-`SECRET_KEY`: to some secret
