@@ -1,11 +1,7 @@
 # acme-app
 
 ## Development Locally
-**Assumed Dependencies**:
-* python
-* npm
 
-**TLDR**
 ```
 # install all python requirements
 pip install -r requirements.txt
