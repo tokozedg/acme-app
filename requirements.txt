@@ -3,7 +3,6 @@ Flask-SQLAlchemy
 gunicorn
 psycopg2-binary
 SQLAlchemy-Utils
-Werkzeug
 pytest
 pytest-cov
 coverage
