@@ -10,6 +10,7 @@ export TESTING=True
 export DEBUG=True
 python runserver.py
 ```
+
 This will use an in-memory database. To actually test with a PostGres database one just needs to setup the appropriate environment variables.
 
 ### Environment Variables
