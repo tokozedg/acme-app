@@ -1,12 +1,9 @@
 import os
 from app import APP
+
+VERSION = '1.0.0'
+
 if __name__ == "__main__":
-    if (os.environ.get("DATABASE_URL") == "" or
-            os.environ.get("DATABASE_URL") is None):
-        # init a memory database to use
-        from initDB import init_database
-        print("Initializing database")
-        init_database()
     start = False
     port = 5000
     debug = os.environ.get("DEBUG", False)
@@ -16,5 +13,5 @@ if __name__ == "__main__":
             start = True
         except OSError as e:
             print(e)
-            print(f"Port:{port} taken trying another")
+            print(f"Version:{VERSION}")
             port += 1
